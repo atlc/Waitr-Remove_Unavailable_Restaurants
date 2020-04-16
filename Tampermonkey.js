@@ -16,11 +16,8 @@
 
     setTimeout(() => {
         let removeUnavailableSections = () => [...document.querySelectorAll("section>div>div>a>div>h3[class*='ComingSoon']")].forEach(unavailable=>unavailable.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.removeChild(unavailable.parentElement.parentElement.parentElement.parentElement.parentElement));
-
-        setTimeout(() => {
-            let seeMoreButt = [...document.getElementsByTagName('button')].filter(b => b.innerText === "See More Restaurants")[0];
-            seeMoreButt.onclick = (e) => setTimeout(() => removeUnavailableSections(), 250);
-        }, 3000);
+        let seeMoreButt = [...document.getElementsByTagName('button')].filter(b => b.innerText === "See More Restaurants")[0];
+        seeMoreButt.onclick = (e) => setTimeout(() => removeUnavailableSections(), 350);
 
         let navItems = document.querySelector("[class*='MainMenu']").firstElementChild;
         let blogButton = navItems.children[3];
