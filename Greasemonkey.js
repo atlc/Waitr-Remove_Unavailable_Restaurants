@@ -11,7 +11,7 @@
 setTimeout(() => {
   let removeUnavailableSections = () => [...document.querySelectorAll("section>div>div>a>div>h3[class*='ComingSoon']")].forEach(unavailable=>unavailable.parentElement.parentElement.parentElement.parentElement.parentElement.parentElement.removeChild(unavailable.parentElement.parentElement.parentElement.parentElement.parentElement));
   let seeMoreButt = [...document.getElementsByTagName('button')].filter(b => b.innerText === "See More Restaurants")[0];
-	seeMoreButt.onclick = (e) => setTimeout(() => removeUnavailableSections(), 250);
+  seeMoreButt.onclick = (e) => setTimeout(() => removeUnavailableSections(), 250);
   removeUnavailableSections();
   
   // Hijack the blog button at the top of the page to manually remove the elements? Think above is better UX though
