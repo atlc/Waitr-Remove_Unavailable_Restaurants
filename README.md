@@ -21,7 +21,7 @@ Waitr's site is super sluggish under the current load of COVID-19 delivery deman
 
 If Waitr is still fetching information and the site hasn't fully loaded by then, whenever you click the `"See More Restaurants"` button on the main page, that deletion will fire again.
 
-If you're using the search function (which I haven't implemented anything for yet), OR for any other page in the site that might display restaurants, you can also click the `Remove 'Coming Soon' Restaurants` button (which hijacks the blog button, sorry Waitr blog writers) on any page in the site to get rid of them too.
+If you're using the search function (which I haven't implemented anything for yet), OR for any other page in the site that might display restaurants, you can also click the `Remove 'Coming Soon' Restaurants` button in the navbar (which hijacks the blog button, sorry Waitr blog writers) while on any page in the site to get rid of them too.
 
 # Supported Platforms
 - Firefox (Works with Tampermonkey and Greasemonkey)
