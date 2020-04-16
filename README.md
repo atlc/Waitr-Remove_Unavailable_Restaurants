@@ -15,6 +15,13 @@ Userscripts allow (as the name might suggest), users to allow their own scripts 
 - Click "Create a new script", paste the copied code into the editor making sure to **overwrite the default stuff that was previously there**, and save.
 - Open Waitr or reload the page if you're already there, and revel in the new page that is free of clutter.
 
+# How it works
+
+Waitr's site is super sluggish under the current load of COVID-19 delivery demands (or maybe that's because I'm developing on a Laptop & WiFi currently), and I can't get DOM events timed reliably(??). When the script is loaded, it will wait 5 seconds, then run through the page to delete those restaurants.
+
+If Waitr is still fetching information and the site hasn't fully loaded by then, whenever you click the `"See More Restaurants"` button on the main page, that deletion will fire again.
+
+If you're using the search function (which I haven't implemented anything for yet), OR for any other page in the site that might display restaurants, you can also click the `Remove 'Coming Soon' Restaurants` button (which hijacks the blog button, sorry Waitr blog writers) on any page in the site to get rid of them too.
 
 # Supported Platforms
 - Firefox (Works with Tampermonkey and Greasemonkey)
